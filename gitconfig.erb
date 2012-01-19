@@ -15,6 +15,28 @@
 	whitespace = nowarn
 [format]
 	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+
+[user]
+	email = ivanov-vk@yandex.ru
+	name = Victor Ivanov
+[giggle]
+	main-window-view = HistoryView
+	history-view-vpane-position = 579
+	show-graph = true
+	main-window-maximized = true
+	main-window-geometry = 0x0+0+0
+	file-view-vpane-position = 629
+	file-view-hpane-position = 348
+[gui]
+	historybrowser = gitg
+	editor = gmate
+[diff]
+	tool = meld
+[merge]
+	tool = meld
+[cola]
+	fontdiff = Droid Sans Mono, 10, -1, 5, 50, 0, 0, 0, 0, 0
+	tabwidth = 2
 [github]
 	user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
 	token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>

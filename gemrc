@@ -1,5 +1,6 @@
 --- 
 :verbose: true
+:rdoc: --inline-source --line-numbers --format=html
 gem: --no-ri --no-rdoc
 :update_sources: true
 :sources: 

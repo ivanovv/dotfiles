@@ -13,6 +13,12 @@ IRB.conf[:PROMPT_MODE] = :SIMPLE
   rescue LoadError
   end
 end
+require 'ap'
+IRB::Irb.class_eval do
+  def output_value
+    ap @context.last_value
+  end
+end
 
 class Object
   # list methods which aren't in superclass
